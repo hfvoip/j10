@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BasicFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView_widebandgain"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="音量调节 " />
+
+            <SeekBar
+                android:id="@+id/seekBar_widebandgain"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="0.3" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_noise"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="降噪级别" />
+
+            <RadioGroup
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="fill_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_noise0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingRight="@dimen/default_gap"
+                    android:text="无"
+                    android:textColor="@color/colorAccent"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_noise1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingRight="@dimen/default_gap"
+                    android:text="弱"
+                    android:textColor="@color/colorAccent"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_noise2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/default_gap"
+                    android:text="强"
+                    android:textColor="@color/colorAccent"></RadioButton>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+            android:layout_weight="1"
+        android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_1"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:text="助听器有回音" />
+
+
+            <Button
+                android:id="@+id/btn_2"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="助听器有啸叫" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_3"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="助听器听不清" />
+
+
+        <Button
+            android:id="@+id/btn_4"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="听不见门铃或电话铃" />
+
+
+    </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textView_4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+           style="@style/centertext"
+            android:text="作为耳机配合tv streamer的时候，可以输入配对ID" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/input_stream_key"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.google.android.material.textfield.TextInputEditText>
+
+
+
+        <ToggleButton
+            android:id="@+id/toggleButton_hamode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="助听模式"
+            android:textOff="耳机模式"
+            android:text="ToggleButton" />
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</FrameLayout>

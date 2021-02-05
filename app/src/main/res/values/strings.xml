@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">J10 HA</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="lack_permission_msg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="request_permission">申请权限</string>
+    <string name="need_write_setting">应用需要打开修改系统设置权限</string>
+    <string name="need_unknown_app_source">应用需要打开未知来源权限</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="large_text">
+
+        "最具性价比的助听器.\n\n"
+        "提供APP,小程序，网页端验配.\n\n "
+        "可用于蓝牙耳机和听力筛查功能\n\n "
+        "EQ,WDRC,降噪,音乐直通\n\n"
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">这页会显示帮助说明</string>
+    <string name="lth">低拐点</string>
+    <string name="uth">高拐点</string>
+    <string name="cr">压缩比</string>
+    <string name="input_stream_key">输入组ID</string>
+    <string name="connectha">开始配置 >> </string>
+    <string name="connectha_advance">专家模式 >> </string>
+    <string name="tab_memory">环境设置</string>
+    <string name="tab_basic">基础设置  </string>
+    <string name="tab_eq">频率设置</string>
+    <string name="tab_wdrc">语音压缩</string>
+    <string name="tab_help">帮助文档</string>
+    <string name="title_activity_welcome">J10 HA</string>
+    <string name="dummy_button">开始</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="togglescan">点击助听器图像重新检测助听器 </string>
+</resources>

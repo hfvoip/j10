@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:orientation="vertical"
+         >
+
+
+    <TextView
+        style="@android:style/Widget.TextView.PopupMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:text="请选择当前的环境，我们为每种环境准备了一套参数，点击按钮切换环境"></TextView>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+            android:layout_weight="1"
+        android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_memory1"
+                style="@style/DefaultButton"
+                android:layout_width="0dp"
+                android:padding="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/default_gap"
+                android:layout_weight="1"
+                android:text="常用模式" />
+
+
+            <Button
+                android:id="@+id/btn_memory2"
+                style="@style/DefaultButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="40dp"
+                android:text="多人聚会" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_memory3"
+            style="@style/DefaultButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="40dp"
+            android:layout_marginRight="@dimen/default_gap"
+            android:layout_weight="1"
+            android:text="户外交通" />
+
+
+        <Button
+            android:id="@+id/btn_memory4"
+            style="@style/DefaultButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="40dp"
+            android:text="风噪模式" />
+
+
+    </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textView_4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+           style="@style/centertext"
+            android:text="作为耳机配合tv streamer的时候，可以输入配对ID" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/input_stream_key"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.google.android.material.textfield.TextInputEditText>
+
+
+
+        <ToggleButton
+            android:id="@+id/toggleButton_hamode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="助听模式"
+            android:textOff="耳机模式"
+            android:text="ToggleButton" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

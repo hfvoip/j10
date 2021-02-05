@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.3"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|center_horizontal"
+        android:layout_marginRight="100dp"
+
+        android:background="@color/colorPrimary"
+        android:text="@string/connectha"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+
+    <Button
+        android:id="@+id/button_advance"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.3"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|center_horizontal"
+        android:layout_marginLeft="100dp"
+
+        android:background="@color/design_default_color_on_secondary"
+        android:text="@string/connectha_advance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+   <TableLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="100dp"
+
+       android:layout_gravity="center_horizontal"
+       android:stretchColumns="0,2,4">
+       <TableRow>
+           <TextView></TextView>
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:minWidth="100dp"
+               android:minHeight="100dp"
+
+               android:id="@+id/img_leftear"
+               android:layout_width="match_parent"
+               android:background="@mipmap/ear_l_grey"
+                >
+
+           </androidx.appcompat.widget.AppCompatImageView>
+           <TextView></TextView>
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/img_rightear"
+               android:layout_width="match_parent"
+
+               android:layout_gravity="right|center_horizontal"
+               android:background="@mipmap/ear_r_grey"
+               android:minWidth="100dp"
+               android:minHeight="100dp"
+               android:scaleType="fitCenter">
+
+           </androidx.appcompat.widget.AppCompatImageView>
+           <TextView></TextView>
+       </TableRow>
+
+   </TableLayout>
+
+</FrameLayout>
