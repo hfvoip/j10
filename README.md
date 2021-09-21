@@ -1,19 +1,7 @@
-# Android BLE开发框架
+#J10/J11 验配软件
 
-## 基于此库编写的BLE调试助手——BLE Utility，各大应用市场都已上架，欢迎下载使用。下面放两个常用的应用市场地址
-[![](https://img.shields.io/badge/Download-%E5%8D%8E%E4%B8%BA%E5%BA%94%E7%94%A8%E5%B8%82%E5%9C%BA-red)](https://appstore.huawei.com/app/C100302733)
-
-[![](https://img.shields.io/badge/Download-小米应用商店-yellow.svg)](http://app.mi.com/details?id=cn.zfs.bledebugger)
-
-> 第一次进入是主页的话，重新再进一次就是应用详情页了
-
-## 最新版本
-
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/cn.wandersnail/easyble-x/badge.svg)](https://maven-badges.herokuapp.com/maven-central/cn.wandersnail/easyble-x)
-[![Download](https://api.bintray.com/packages/wandersnail/androidx/easyble-x/images/download.svg)](https://bintray.com/wandersnail/androidx/easyble-x/_latestVersion)
-[![](https://img.shields.io/badge/源码-github-blue.svg)](https://github.com/wandersnail/easyble-x)
-[![](https://img.shields.io/badge/源码-码云-red.svg)](https://gitee.com/fszeng/easyble-x)
-
+#以下介绍是本程序使用的第三方BLE库
+ 
 ## 功能
 - 支持多设备同时连接
 - 支持广播包解析
