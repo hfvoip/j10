@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wandersnail.jh10">
+    package="com.jhear.jh10">
 
     <uses-feature
         android:name="android.hardware.bluetooth_le"
@@ -12,44 +12,45 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".MyApplication"
+        android:name="com.jhear.jh10.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".WelcomeActivity"
+            android:name="com.jhear.jh10.WelcomeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_welcome"
             android:theme="@style/AppTheme.Fullscreen">
+
+
+
+        </activity>
+        <activity
+            android:name="com.jhear.jh10.HalistActivity"
+            android:configChanges="keyboardHidden|orientation|navigation|screenSize|keyboard"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.jhear.jh10.ScanActivity"
+            android:configChanges="keyboardHidden|orientation|navigation|screenSize|keyboard"
+            android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
 
-
         </activity>
         <activity
-            android:name=".HalistActivity"
-            android:configChanges="keyboardHidden|orientation|navigation|screenSize|keyboard"
-            android:screenOrientation="portrait">
-
-        </activity>
-        <activity
-            android:name=".ScanActivity"
-            android:configChanges="keyboardHidden|orientation|navigation|screenSize|keyboard"
-            android:screenOrientation="portrait">
-
-        </activity>
-        <activity
-            android:name=".MainActivity"
+            android:name="com.jhear.jh10.MainActivity"
             android:configChanges="keyboardHidden|orientation|navigation|screenSize|keyboard"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".EqActivity"
+            android:name="com.jhear.jh10.EqActivity"
             android:configChanges="keyboardHidden|orientation|navigation|screenSize|keyboard"
             android:screenOrientation="portrait"></activity>
     </application>

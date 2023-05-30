@@ -36,6 +36,30 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3" />
     </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_eq300"
+            style="@style/labeltext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="300Hz " />
+
+        <SeekBar
+            android:id="@+id/seekBar_eq300"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3" />
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,6 +82,29 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_eq800"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/labeltext"
+            android:layout_weight="0.7"
+            android:text="800Hz " />
+
+        <SeekBar
+            android:id="@+id/seekBar_eq800"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3" />
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -110,15 +157,15 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView_eq4000"
+            android:id="@+id/textView_eq3000"
             style="@style/labeltext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.7"
-            android:text="4000Hz " />
+            android:text="3000Hz " />
 
         <SeekBar
-            android:id="@+id/seekBar_eq4000"
+            android:id="@+id/seekBar_eq3000"
           
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -133,15 +180,15 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView_eq8000"
+            android:id="@+id/textView_eq5000"
             style="@style/labeltext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.7"
-            android:text="8000Hz " />
+            android:text="5000Hz " />
 
         <SeekBar
-            android:id="@+id/seekBar_eq8000"
+            android:id="@+id/seekBar_eq5000"
           
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

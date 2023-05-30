@@ -13,6 +13,7 @@
 
         <TableLayout
             android:layout_width="match_parent"
+            android:visibility="gone"
             android:layout_height="wrap_content">
 
             <TableRow android:gravity="center">
@@ -41,14 +42,14 @@
             </TableRow>
 
         </TableLayout>
-        <androidx.viewpager.widget.ViewPager
+        <com.jhear.jh10.NoScrollViewPager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
             android:layout_weight="1.0"
             android:layout_height="match_parent">
 
 
-        </androidx.viewpager.widget.ViewPager>
+        </com.jhear.jh10.NoScrollViewPager>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tablayout"

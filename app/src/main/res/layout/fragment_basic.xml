@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".BasicFragment">
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,6 +42,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="invisible"
 
             android:layout_gravity="top"
             android:orientation="horizontal">
@@ -59,6 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3"
+                android:id="@+id/radiogroup_noise"
                 android:gravity="fill_horizontal"
                 android:orientation="horizontal">
 
@@ -99,7 +101,9 @@
         android:layout_height="0dp"
         android:layout_margin="10dp"
             android:layout_weight="1"
-        android:orientation="horizontal">
+            android:visibility="invisible"
+
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_1"
@@ -108,7 +112,7 @@
                 android:layout_height="match_parent"
 
                 android:layout_weight="1"
-                android:text="助听器有回音" />
+                android:text="马路上噪音太响" />
 
 
             <Button
@@ -129,6 +133,7 @@
         android:layout_height="0dp"
         android:layout_margin="10dp"
         android:layout_weight="1"
+        android:visibility="invisible"
         android:orientation="horizontal">
 
 
@@ -194,8 +199,5 @@
 
     </LinearLayout>
 
-
-
-
     </LinearLayout>
-</FrameLayout>
+</LinearLayout>

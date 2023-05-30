@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:paddingBottom="50dp"
         android:orientation="vertical">
 
         <TextView
@@ -18,28 +19,31 @@
 
             android:layout_height="wrap_content"
             style="@style/centertext"
-            android:text="通道1"></TextView>
+            android:text="低频"></TextView>
+
+
+
 
 
         <LinearLayout
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:visibility="gone"
             android:layout_margin="10dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView_lth1"
+
                 style="@style/labeltext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
-                android:text="@string/lth" />
+                android:text="放大拐点" />
 
             <SeekBar
-                android:id="@+id/seekBar_lth1"
-              
+                android:id="@+id/seekBar_ck1_lth"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3" />
@@ -49,26 +53,73 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:visibility="gone"
             android:layout_margin="10dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView_uth1"
+
                 style="@style/labeltext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
-                android:text="@string/uth" />
+                android:text="压缩拐点" />
 
             <SeekBar
-                android:id="@+id/seekBar_uth1"
-              
+                android:id="@+id/seekBar_ck1_uth"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3" />
         </LinearLayout>
 
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                style="@style/labeltext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="限制拐点" />
+
+            <SeekBar
+                android:id="@+id/seekBar_ck1_limit"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                style="@style/labeltext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/cr_amplitude" />
+
+            <SeekBar
+                android:id="@+id/seekBar_cr1_amp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" />
+        </LinearLayout>
         <LinearLayout
 
             android:layout_width="match_parent"
@@ -87,45 +138,49 @@
 
             <SeekBar
                 android:id="@+id/seekBar_cr1"
-              
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3" />
         </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <TextView
+
+                style="@style/labeltext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/ck_desc" />
+
+        </LinearLayout>
+        <com.jhear.jh10.RangeSeekBar
+            android:layout_margin="8dp"
+            android:id="@+id/rangeSeekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/centertext"
-            android:text="通道2"
+            android:text="中频"
 
             ></TextView>
 
 
-        <LinearLayout
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
 
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView_lth2"
-                style="@style/labeltext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.7"
-                android:text="@string/lth" />
-
-            <SeekBar
-                android:id="@+id/seekBar_lth2"
-              
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.3" />
-        </LinearLayout>
 
         <LinearLayout
 
@@ -136,16 +191,16 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView_uth2"
+
                 style="@style/labeltext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
-                android:text="@string/uth" />
+                android:text="@string/cr_amplitude" />
 
             <SeekBar
-                android:id="@+id/seekBar_uth2"
-              
+                android:id="@+id/seekBar_cr2_amp"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3" />
@@ -165,49 +220,48 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
-                android:text="CR" />
+                android:text="@string/cr" />
 
             <SeekBar
                 android:id="@+id/seekBar_cr2"
-              
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3" />
         </LinearLayout>
+        <LinearLayout
 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <TextView
+
+                style="@style/labeltext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/ck_desc" />
+
+        </LinearLayout>
+        <com.jhear.jh10.RangeSeekBar
+            android:layout_margin="8dp"
+            android:id="@+id/rangeSeekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="通道3"
+            android:text="较高频"
             style="@style/centertext"
 
             ></TextView>
 
 
-        <LinearLayout
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
 
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView_lth3"
-                style="@style/labeltext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.7"
-                android:text="@string/lth" />
-
-            <SeekBar
-                android:id="@+id/seekBar_lth3"
-              
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.3" />
-        </LinearLayout>
 
         <LinearLayout
 
@@ -218,16 +272,16 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView_uth3"
+
                 style="@style/labeltext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
-                android:text="@string/uth" />
+                android:text="@string/cr_amplitude" />
 
             <SeekBar
-                android:id="@+id/seekBar_uth3"
-                
+                android:id="@+id/seekBar_cr3_amp"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3" />
@@ -247,49 +301,51 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
-                android:text="CR " />
+                android:text="@string/cr" />
 
             <SeekBar
                 android:id="@+id/seekBar_cr3"
-              
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3" />
         </LinearLayout>
+        <LinearLayout
 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <TextView
+
+                style="@style/labeltext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/ck_desc" />
+
+        </LinearLayout>
+        <com.jhear.jh10.RangeSeekBar
+            android:layout_margin="8dp"
+            android:id="@+id/rangeSeekBar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="通道4"
+            android:text="高频"
             style="@style/centertext"
 
             ></TextView>
 
 
-        <LinearLayout
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
 
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView_lth4"
-                style="@style/labeltext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.7"
-                android:text="@string/lth" />
 
-            <SeekBar
-                android:id="@+id/seekBar_lth4"
-             
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.3" />
-        </LinearLayout>
+
 
         <LinearLayout
 
@@ -300,16 +356,16 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView_uth4"
+
                 style="@style/labeltext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
-                android:text="@string/uth" />
+                android:text="@string/cr_amplitude" />
 
             <SeekBar
-                android:id="@+id/seekBar_uth4"
-               
+                android:id="@+id/seekBar_cr4_amp"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3" />
@@ -329,17 +385,40 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
-                android:text="CR " />
+                android:text="@string/cr" />
 
             <SeekBar
                 android:id="@+id/seekBar_cr4"
-               
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3" />
         </LinearLayout>
+        <LinearLayout
 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <TextView
+
+                style="@style/labeltext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/ck_desc" />
+
+        </LinearLayout>
+        <com.jhear.jh10.RangeSeekBar
+            android:layout_margin="8dp"
+            android:id="@+id/rangeSeekBar4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
+
+
+
 
 </ScrollView>

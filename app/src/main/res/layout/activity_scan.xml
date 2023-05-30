@@ -62,15 +62,17 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
 
         android:id="@+id/layout_ears">
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
-            android:layout_weight="0.3"
+            android:layout_weight="0.5"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center|center_horizontal"
-            android:layout_marginRight="100dp"
+            android:layout_marginRight="10dp"
+
 
             android:background="@color/colorPrimary"
             android:text="@string/connectha"
@@ -79,6 +81,7 @@
 
         <Button
             android:id="@+id/button_advance"
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_weight="0.3"
             android:layout_height="wrap_content"
@@ -93,10 +96,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="100dp"
 
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageview_0"
@@ -117,17 +126,30 @@
                 android:clickable="true"
                 android:foregroundGravity="center"
                 android:src="@mipmap/ear_r_grey" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/btn_findme"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="@string/findme"></TextView>
         </LinearLayout>
+
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/rescan"
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|right"
+            android:layout_gravity="right|top"
             android:layout_margin="10dp"
             app:backgroundTint="@color/design_default_color_background"
             app:layout_anchor="@+id/imageview_0"
             app:layout_anchorGravity="top|right"
+
             app:srcCompat="@mipmap/ic_rescan" />
 
 

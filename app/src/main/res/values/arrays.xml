@@ -9,11 +9,5 @@
         <item>reply</item>
         <item>reply_all</item>
     </string-array>
-    <string-array name="noiselevel_values">
-        <item>不降噪</item>
-        <item>中等降噪</item>
-        <item>强度降噪</item>
-
-    </string-array>
 
 </resources>

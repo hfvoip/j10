@@ -1,11 +1,5 @@
 <resources>
-    <string name="app_name">J10 HA</string>
-    <string name="setting">设置</string>
-    <string name="cancel">取消</string>
-    <string name="lack_permission_msg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
-    <string name="request_permission">申请权限</string>
-    <string name="need_write_setting">应用需要打开修改系统设置权限</string>
-    <string name="need_unknown_app_source">应用需要打开未知来源权限</string>
+    <string name="app_name">J10 免验配助听器</string>
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
@@ -39,9 +33,10 @@
     <string name="tab_basic">基础设置  </string>
     <string name="tab_eq">频率设置</string>
     <string name="tab_wdrc">语音压缩</string>
-    <string name="tab_help">帮助文档</string>
     <string name="title_activity_welcome">J10 HA</string>
     <string name="dummy_button">开始</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="togglescan">点击助听器图像重新检测助听器 </string>
+    <string name="ck_desc">声音拐点设置:放大拐点-压缩拐点-限制拐点</string>
+    <string name="cr_amplitude">放大比</string>
+    <string name="findme">+ 搜索助听器</string>
+
 </resources>
